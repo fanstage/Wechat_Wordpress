@@ -162,9 +162,9 @@ class Robot(Job):
                     url_element = root.find('.//url')
                     if url_element is not None:
                         url = url_element.text
-                    sender_email = "2243366238@qq.com"  # 替换为你的电子邮件地址
-                    sender_password = "afkxgnkmhdoaeafh"  # 替换为你的电子邮件密码（注意：使用应用专用密码，如果启用了2步验证）
-                    receiver_email = "fanstagetop@126.com"  # 替换为接收者的电子邮件地址
+                    sender_email = "xxxx@xxx.com"  # 替换为你的电子邮件地址
+                    sender_password = "xxx"  # 替换为你的电子邮件密码（注意：使用应用专用密码，如果启用了2步验证）
+                    receiver_email = "xxxxx@xxx.com"  # 替换为接收者的电子邮件地址
                     message = rewo.fetch_weixin_article(url)
                     rewo.send_email(sender_email, sender_password, receiver_email, title, message)
 
